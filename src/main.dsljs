@@ -1,0 +1,22 @@
+macros: {
+  $macro innerHtml $selector [
+      $content
+    ] #(
+    document.querySelector($selector).innerHTML = $content
+  )#
+}
+
+innerHtml "#app" [
+  `<div>
+    <a href="https://vite.dev" target="_blank">
+    </a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+    </a>
+    <h1>Hello Vite!</h1>
+    <div class="card">
+    </div>
+    <p class="read-the-docs">
+      Click on the Vite logo to learn more
+    </p>
+  </div>`
+]
